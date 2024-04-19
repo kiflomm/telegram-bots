@@ -6,7 +6,7 @@ botToken = process.env.BOT_TOKEN || process.env.BOT_TOKEN_DEV
 PORT = process.env.PORT || 5000
 const bot = new Bot(botToken) 
 app.get('/',(req,res)=>{ 
-    res.json({message: "the bot is live"})
+    res.json({message: "The bot is live"})
 })
 app.listen(PORT,console.log(`The bot is alive`))
 
